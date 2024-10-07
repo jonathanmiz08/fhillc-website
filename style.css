@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+
+}
+
+#hero-image {
+    width: 40%;
+    padding-left: 4%;
+
+}
+
+
+p {
+    width: 40%;
+    padding-right: 4%;
+    color: #2b2839;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: initial;
+        padding: 0;
+
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+
+    }
+
+    #hero-image {
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+
+}
+
+
+.services {
+
+
+    background-color: #2b2839;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+
+
+}
+
+.services-images {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+
+
+#roofing-image {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+
+#metal-roofing-image {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+
+#siding-image {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+
+#gutters-image {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+
+.test {
+    margin: 10px;
+    width: 360px;
+    background-color: white;
+    color: black;
+
+}
+
