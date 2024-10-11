@@ -62,57 +62,77 @@ p {
 }
 
 
+
+
 .services {
-
-
+    display: flex;
     background-color: #2b2839;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
 
+    justify-content: center;
+
+
 
 }
 
 .services-images {
-    margin: auto;
-    width: 100%;
+    width: 98%;
+    border: 2px solid blue;
     display: flex;
+
+
     justify-content: center;
-    flex-flow: row wrap;
 
 }
 
 
-#roofing-image {
+
+
+
+@media screen and (max-width: 1110px) {
+    .services-images {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 15px;
+    }
+
+    .test {
+        max-width: 30vw;
+        width: 100%;
+        background-color: white;
+        color: black;
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .services-images {
+        grid-template-columns: repeat(1, 360px);
+    }
+}
+
+
+
+.images {
     width: 200px;
     height: 200px;
     padding: 15px;
 }
 
-#metal-roofing-image {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-}
-
-#siding-image {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-}
-
-#gutters-image {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-}
 
 .test {
-    margin: 10px;
+    margin: 15px;
     width: 360px;
     background-color: white;
     color: black;
 
 }
+
 
