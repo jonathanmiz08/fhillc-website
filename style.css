@@ -21,24 +21,45 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     align-items: center;
-    background-color: #181C14;
+    background-image: url('roof-hero.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     color: white;
 ;
 
 }
 
-#hero-image {
-    width: 40%;
-    padding-left: 4%;
+.titles {
+    font-size: 80px;
+}
+
+.intro-div {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+
+
+
+
+}
+
+.intro-items {
+
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 }
 
 
 .intro {
-    width: 40%;
-    padding-right: 4%;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1px;
     line-height: 2;
     font-size: 1rem;
@@ -70,13 +91,80 @@ body {
 
 
 
+.quote {
+    width: 50%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+
+}
+
+.quote-form {
+    padding: 10px 10px;
+    width: 450px;
+    height: 100%;
+    background-color: black;
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    opacity: .75
+
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+input {
+    height: 50px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+
+}
+
+#message {
+    height: 150px;
+    border: 2px solid white;
+
+    background-color: black;
+    color: white;
+}
+
+.labels {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+
+
+
+}
+
+
+
+
 
 .services {
     display: flex;
-    background-color: #181C14;
+    background-color: black;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
 
     justify-content: center;
@@ -92,24 +180,49 @@ body {
 
 }
 
+.the-images {
+    display: flex;
+    justify-content: center;
+}
+
 
 .images {
-    width: 60%;
-    margin: 6% 9%;
-    aspect-ratio: 1/1;
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 2/1.75;
     height: auto;
+    border: 10px solid lightgrey;
 
 }
 
 
 .test {
+
     margin: 10px;
     width: 360px;
     min-width: 200px;
     height: auto;
     background-color: white;
     color: black;
+    /*border: 5px solid dodgerblue;
 
+
+     */
+
+}
+
+h2 {
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    margin: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -130,7 +243,6 @@ body {
     }
 
     .test {
-        margin: 5px;
         width: 100%;
 
 
@@ -154,61 +266,11 @@ body {
 
 }
 
-.quote {
-    width: 100%;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+.temp {
+    height: 250px;
 }
-
-.quote-form {
-
-    width: 900px;
-}
-
-.form-row {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-input {
-    height: 50px;
-}
-
-#message {
-    height: 200px;
-}
-
-.labels {
-    display: flex;
-}
-
-@media screen and (max-width: 900px) {
-
-    .quote-form {
-
-        width: 90%;
-    }
-
-
-}
-
-.required {
-    margin: 0 10px;
-}
-
-
-
 
 
 
