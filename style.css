@@ -6,7 +6,12 @@
 
 
 body {
+    width: 100%;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
@@ -16,6 +21,9 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     align-items: center;
+    background-color: #181C14;
+    color: white;
+;
 
 }
 
@@ -26,10 +34,9 @@ body {
 }
 
 
-p {
+.intro {
     width: 40%;
     padding-right: 4%;
-    color: #2b2839;
     font-family: Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -45,7 +52,7 @@ p {
 
     }
 
-    p {
+    .intro {
         width: 90%;
         margin: auto;
         padding: 0;
@@ -66,7 +73,7 @@ p {
 
 .services {
     display: flex;
-    background-color: #2b2839;
+    background-color: #181C14;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -80,7 +87,6 @@ p {
 
 .services-images {
     width: 100%;
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
 
@@ -88,16 +94,19 @@ p {
 
 
 .images {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
+    width: 60%;
+    margin: 6% 9%;
+    aspect-ratio: 1/1;
+    height: auto;
+
 }
 
 
 .test {
-    margin: 15px;
+    margin: 10px;
     width: 360px;
     min-width: 200px;
+    height: auto;
     background-color: white;
     color: black;
 
@@ -105,10 +114,10 @@ p {
 
 
 
-@media screen and (max-width: 1110px) and (min-width: 768px){
+@media screen and (max-width: 1110px) {
 
     .services-images {
-        width: 98%;
+        width: 96%;
 
     }
 
@@ -116,43 +125,93 @@ p {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        gap: 20px;
         overflow: hidden;
     }
 
     .test {
-        margin: 0;
-        /*max-width: 30vw;
-
-         */
-
-
+        margin: 5px;
         width: 100%;
-        background-color: white;
-        color: black;
+
 
     }
+}
 
-    .images {
-        width: 200px;
-        height: 200px;
-    }
+    @media screen and (max-width: 768px){
+
+        .services-images {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
 
 }
 
+    @media screen and (max-width: 580px){
+        .services-images {
+            grid-template-columns: 1fr;
 
-@media screen and (max-width: 768px){
-    .services-images {
-        flex-wrap: wrap;
+        }
 
-
-
-    }
-
-    .test {
-        width: 300px;
-    }
 }
+
+.quote {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-form {
+
+    width: 900px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+input {
+    height: 50px;
+}
+
+#message {
+    height: 200px;
+}
+
+.labels {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+
+    .quote-form {
+
+        width: 90%;
+    }
+
+
+}
+
+.required {
+    margin: 0 10px;
+}
+
+
+
+
+
+
 
 
 
