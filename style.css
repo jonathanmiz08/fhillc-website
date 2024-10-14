@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 .hero {
@@ -21,220 +22,170 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     align-items: center;
-    background-image: url('roof-hero.jpeg');
+    background-image: url('siding-image2.png');
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     color: white;
-;
-
+    min-height: 600px;
 }
 
-.titles {
-    font-size: 80px;
-}
-
-.intro-div {
+.hero_message {
     width: 50%;
     display: flex;
     justify-content: end;
-
-
-
-
-
 }
 
-.intro-items {
-
+.hero_message-content {
     width: 80%;
+}
+
+.hero_title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-
-.intro {
-
+.hero_subtitle {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 1px;
-    line-height: 2;
-    font-size: 1rem;
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-
-@media screen and (max-width: 768px) {
-    .hero {
-        display: initial;
-        padding: 0;
-
-    }
-
-    .intro {
-        width: 90%;
-        margin: auto;
-        padding: 0;
-
-    }
-
-    #hero-image {
-        display: block;
-        width: 90%;
-        margin: auto;
-        padding: 0;
-    }
-
-}
-
-
-
-.quote {
+.hero_estimate {
     width: 50%;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
-
-
+    height: 500px;
 }
 
-.quote-form {
+.hero_form {
     padding: 10px 10px;
-    width: 450px;
+    width: 425px;
     height: 100%;
     background-color: black;
     border: 5px solid dodgerblue;
     border-radius: 10px;
-    opacity: .75
-
-
+    opacity: .75;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.form-row {
+.hero_form-row {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0;
 }
 
-.form-field {
+.hero_input {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
 }
 
-input {
-    height: 50px;
+.hero_input-label {
+    display: flex;
+}
+
+.hero_input-box {
+    height: 35px;
     border: 2px solid white;
     background-color: black;
     color: white;
-
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
 }
 
 #message {
-    height: 150px;
+    height: 100px;
     border: 2px solid white;
 
     background-color: black;
     color: white;
 }
 
-.labels {
-    display: flex;
-}
-
 @media screen and (max-width: 900px) {
+    .hero_message {
+        width: 80%;
+        justify-content: center;
+    }
 
-
+    .hero_estimate {
+        display: none;
+    }
 
 }
 
-
-
-
-
-.services {
+.service {
     display: flex;
-    background-color: black;
+    background-color: white;
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
-
     justify-content: center;
-
-
-
 }
 
-.services-images {
+.service-content {
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
-.the-images {
-    display: flex;
-    justify-content: center;
+.service_card {
+    margin: 10px;
+    width: 360px;
+    min-width: 200px;
+    height: auto;
+    background-color: lightgrey;
+    color: black;
 }
 
 
-.images {
+.service_image {
     text-align: center;
     width: 100%;
     aspect-ratio: 2/1.75;
     height: auto;
     border: 10px solid lightgrey;
-
 }
 
 
-.test {
-
-    margin: 10px;
-    width: 360px;
-    min-width: 200px;
-    height: auto;
-    background-color: white;
-    color: black;
-    /*border: 5px solid dodgerblue;
 
 
-     */
-
-}
-
-h2 {
+.service_title {
+    margin-top: 5%;
     margin-left: 5%;
     font-size: 30px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-h3 {
+.service_subtitle {
     margin: 5%;
     font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 
 @media screen and (max-width: 1110px) {
-
-    .services-images {
+    .service-content {
         width: 96%;
-
-    }
-
-    .services-images {
+        margin: 0;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);
@@ -242,24 +193,23 @@ h3 {
         overflow: hidden;
     }
 
-    .test {
+    .service_card {
         width: 100%;
-
-
+        margin: 0;
     }
 }
 
-    @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
-        .services-images {
+        .service-content {
             grid-template-columns: repeat(2, 1fr);
 
         }
 
 }
 
-    @media screen and (max-width: 580px){
-        .services-images {
+@media screen and (max-width: 580px){
+        .service-content {
             grid-template-columns: 1fr;
 
         }
@@ -268,11 +218,43 @@ h3 {
 
 
 
-.temp {
-    height: 250px;
+
+.the-images {
+    display: flex;
+    flex-direction: column;
 }
 
+footer {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1800px;
+    text-align: left;
+    color: white;
+    background-color: black;
+}
 
+#footer_title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(40px, 2.5vw, 60px);
+
+    margin: 20px 0;
+}
+
+.footer_subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 15px 0;
+
+}
+.logo {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 250px;
+}
 
 
 
