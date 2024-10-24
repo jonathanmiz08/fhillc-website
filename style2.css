@@ -1,0 +1,184 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('roof-install.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 250px;
+
+}
+
+.header_container {
+    max-width: 1280px;
+    text-align: center;
+    color: white;
+
+}
+
+
+.header_title {
+
+    font-family: Helvetica, sans-serif;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    font-size: 120px;
+}
+
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Helvetica, sans-serif;
+
+}
+
+.content_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    padding: 0 20px;
+
+}
+
+.content_description {
+    padding: 0 5% 0 0;
+    width: 50%;
+}
+
+.content_title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content_description-written {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#content_image {
+    max-width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+
+#services_container {
+    margin-top: 50px;
+    max-width: 1280px;
+    border-top: lightgrey 4px solid;
+    padding-top: 50px;
+}
+
+
+.service_description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service_container {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+
+
+
+
+.service_title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service_written {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.service_image {
+    width: 45%;
+    max-height: 450px;
+    border-radius: 10px;
+    margin-top: 5px;
+
+
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer {
+    padding: 50px 20px;
+
+    max-width: 1280px;
+
+    text-align: left;
+    color: white;
+    background-color: black;
+
+    /*font-family: "Roboto", sans-serif;
+    font-style: normal;
+
+     */
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+#footer_title {
+    width: 90%;
+    font-weight: 700;
+    font-size: clamp(40px, 2.5vw, 60px);
+}
+
+.footer_subtitle {
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 250px;
+}

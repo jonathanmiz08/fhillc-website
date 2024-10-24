@@ -4,147 +4,178 @@
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    -->
 
 </head>
 
 <body>
-    <div class="hero">
-        <div class="hero_message">
-            <div class="hero_message-content">
-                <h1 class="hero_title">
-                    Built on Family
-                </h1>
-                <h2 class="hero_subtitle">
-                    Proudly improving homes across New York, Pennsylvania, and New Jersey with reliable service for over 20 years!
-                </h2>
-                <p class="intro">
 
-                    <!--Family Home Improvement LLC has been serving clients for more than 25 years
-                    in New Jersey, eastern Pennsylvania, and select New York areas. Our services
-                    include repair, replacement, and installation of roofing, metal roofing, siding,
-                    and gutters. We aim to exceed our customer’s expectations and provide the
-                    best service in a short amount of time. We offer our customers full disclosure of
-                    our process in their home improvement to avoid any miscommunication and
-                    deception. Get started on your home improvement with us today!
-                    -->
-                </p>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">
+                <img id="logo" src="LOGO%20PNG.png">
+            </a>
 
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Websites/tech.html" class="navbar_links">
+                        Services
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        Gallery
+                    </a>
+                </li>
+
+            </ul>
+            <div class="navbar_btn">
+                <a href="/" class="button">
+                    Contact
+                </a></div>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+        </div>
+    </nav>
 
+
+
+<section class="hero">
+    <div class="hero_container">
+        <div class="hero_message">
+            <h1 class="hero_title">
+                Built on Family
+            </h1>
+            <h2 class="hero_subtitle">
+                Proudly improving homes across New York, Pennsylvania, and New Jersey with reliable service for over 20 years!
+            </h2>
         </div>
         <div class="hero_estimate">
-
             <form class="hero_form">
                 <div class="hero_form-row">
-                    <h1>
+                    <h1 id="hero_form-title">
                         FREE ESTIMATE
                     </h1>
                 </div>
                 <div class="hero_form-row">
-
                     <div class="hero_input">
-
                         <label class="hero_input-label" for="first_name">First Name</label>
-
                         <input class="hero_input-box" type="text" id="first_name" name="first_name"required>
                     </div>
                     <div class="hero_input">
-
-
                         <label class="hero_input-label" for="last_name">Last Name</label>
-
-
                         <input class="hero_input-box" type="text" id="last_name" name="last_name" required>
-
                     </div>
                 </div>
                 <div class="hero_form-row">
                     <div class="hero_input">
                         <label class="hero_input-label" for="number">Phone Number</label>
-
                         <input class="hero_input-box" type="text" id="number" name="number" required>
                     </div>
                 </div>
                 <div class="hero_form-row">
                     <div class="hero_input">
                         <label class="hero_input-label" for="email"> Email</label>
-
                         <input class="hero_input-box" type="text" id="email" name="email" required>
                     </div>
                 </div>
-
                 <div class="hero_form-row">
                     <div class="hero_input">
-
                         <label class="hero_input-label" for="message"> Message </label>
-
                         <textarea id="message" name="message" required></textarea>
-
                     </div>
                 </div>
 
 
+
+                        <a href="/" id="hero_button">
+                            Submit
+                        </a>
+
             </form>
+        </div>
+    </div>
+</section>
+
+<section class="service">
+    <div class="service_container">
+
+        <div class="service_card">
+            <img class="service_image" src="metal-roof.jpeg">
+            <div class="service_description">
+                <h2 class="service_title">Shingle & Flat Roofing</h2>
+                <h3 class="service_subtitle">Protect your home with our durable and expertly installed roofing solutions. We ensure your home stays safe and dry through every season.</h3>
+
+            </div>
+            <a href="/" class="service_button">
+                LEARN MORE
+            </a>
 
         </div>
+        <div class="service_card">
+            <img class="service_image" src="roof-image.jpeg">
+            <div class="service_description">
+                <h2 class="service_title">Siding & Gutters</h2>
+                <h3 class="service_subtitle">Transform the exterior of your home with our high-quality siding services. Our service includes a variety of siding styles and gutter installation. <!--provide a variety of styles and materials to enhance your home's appeal. Keep your home safe from water damage with high-quality gutter services. We offer gutter installation and repair to ensure proper drainage--></h3>
 
-
-
-    </div>
-
-
-    <div class="service">
-        <div class="service-content">
-            <div class="service_card">
-                <div class="the-images">
-                    <img class="service_image" src="roof-person.jpg">
-                </div>
-                <h2 class="service_title">Roofing</h2>
-                <h3 class="service_subtitle">Protect your home with our durable and expertly installed roofing solutions. <!--We ensure your home stays safe and dry through every season, with service you can trust.--></h3>
             </div>
-            <div class="service_card">
-                <div class="the-images">
-                    <img class="service_image" src="metal-roof.jpeg">
-                </div>
+            <a href="/"  class="service_button">
+                LEARN MORE
+            </a>
+
+
+        </div>
+        <div class="service_card">
+            <img class="service_image" src="gutter.jpg">
+            <div class="service_description">
                 <h2 class="service_title">Metal Roofing</h2>
-                <h3 class="service_subtitle">Invest in the strength and longevity of metal roofing. <!--Quality craftsmanship and service is always guaranteed.--> </h3>
+                <h3 class="service_subtitle">Invest in the strength and longevity of metal roofing. Quality craftsmanship and service is always guaranteed with a variety of solutions.</h3>
+
             </div>
-            <div class="service_card">
-                <div class="the-images">
-                    <img class="service_image" src="roof-image.jpeg">
-                </div>
-                <h2 class="service_title">Siding</h2>
-                <h3 class="service_subtitle">Transform the exterior of your home with our high-quality siding services. <!--We provide a variety of styles and materials to enhance your home's appeal.--></h3>
-            </div>
-            <div class="service_card">
-                <div class="the-images">
-                    <img class="service_image" src="gutter.jpg">
-                </div>
-                <h2 class="service_title">Gutters</h2>
-                <h3 class="service_subtitle">Keep your home safe from water damage with high-quality gutter services. <!--We offer gutter installation and repair to ensure proper drainage.--></h3>
-            </div>
+            <a href="/"  class="service_button">
+                LEARN MORE
+            </a>
+
+
 
         </div>
+
     </div>
+</section>
+
+<section class="footer">
     <footer>
-        <h1 id="footer_title">
-            Contact Us
-        </h1>
-        <h2 class="footer_subtitle">
-            Text: (908) 967-2805
-        </h2>
-        <h2 class="footer_subtitle">
-            Call: (973) 698-6978
-        </h2>
-        <h2 class="footer_subtitle">
-            info@FHILLC.com
-        </h2>
-        <img class="logo" src="LOGO%20PNG.png">
+
+        <div id="footer_container">
+            <img class="logo" src="LOGO%20PNG.png">
+            <div id="footer_text">
+                <div id="footer_states">New Jersey - Pennsylvania - New York</div>
+                <div id="footer_contact">
+                    <div class="footer_contact-element">Text: (908) 967-2805</div>
+                    <div class="footer_contact-element">Call: (973) 698-6978</div>
+                    <div id="footer_email" class="footer_contact-element">Email: info@FHILLC.com</div>
+                </div>
+                <div id="footer_hours">Mon - Sun 7am - 10pm EST </div>
+            </div>
+        </div>
+        <div id="footer_copyright">&copy; 2024 Family Home Improvement LLC</div>
 
     </footer>
+</section>
+
+<script src = "app.js"></script>
+
 </body>
 </html>
