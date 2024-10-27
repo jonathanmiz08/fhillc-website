@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="style.css"/>
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    -->
 
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="/" id="navbar_logo">
-                <img id="logo" src="LOGO%20PNG.png">
-            </a>
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="/" id="navbar_logo">
+            <img id="logo" src="Logo.svg">
+        </a>
 
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="/" class="navbar_links">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/Websites/tech.html" class="navbar_links">
-                        Services
-                    </a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/" class="navbar_links">
-                        Gallery
-                    </a>
-                </li>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">
+                    Home
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">
+                    Services
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">
+                    Gallery
+                </a>
+            </li>
 
-            </ul>
-            <div class="navbar_btn">
-                <a href="/" class="button">
-                    Contact
-                </a></div>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+        </ul>
+        <div class="navbar_btn">
+            <a href="/" class="button">
+                Contact
+            </a></div>
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
 
@@ -62,50 +61,45 @@
                 Proudly improving homes across New York, Pennsylvania, and New Jersey with reliable service for over 20 years!
             </h2>
         </div>
-        <div class="hero_estimate">
-            <form class="hero_form">
-                <div class="hero_form-row">
-                    <h1 id="hero_form-title">
-                        FREE ESTIMATE
-                    </h1>
+        <form class="hero_form">
+            <div class="hero_form-row">
+                <div id="hero_form-title">
+                    FREE ESTIMATE
                 </div>
-                <div class="hero_form-row">
-                    <div class="hero_input">
-                        <label class="hero_input-label" for="first_name">First Name</label>
-                        <input class="hero_input-box" type="text" id="first_name" name="first_name"required>
-                    </div>
-                    <div class="hero_input">
-                        <label class="hero_input-label" for="last_name">Last Name</label>
-                        <input class="hero_input-box" type="text" id="last_name" name="last_name" required>
-                    </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="first_name">First Name</label>
+                    <input class="hero_input-box" type="text" id="first_name" name="first_name" required>
                 </div>
-                <div class="hero_form-row">
-                    <div class="hero_input">
-                        <label class="hero_input-label" for="number">Phone Number</label>
-                        <input class="hero_input-box" type="text" id="number" name="number" required>
-                    </div>
+                <div class="hero_input">
+                    <label class="hero_input-label" for="last_name">Last Name</label>
+                    <input class="hero_input-box" type="text" id="last_name" name="last_name" required>
                 </div>
-                <div class="hero_form-row">
-                    <div class="hero_input">
-                        <label class="hero_input-label" for="email"> Email</label>
-                        <input class="hero_input-box" type="text" id="email" name="email" required>
-                    </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="number">Phone Number</label>
+                    <input class="hero_input-box" type="text" id="number" name="number" required>
                 </div>
-                <div class="hero_form-row">
-                    <div class="hero_input">
-                        <label class="hero_input-label" for="message"> Message </label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="email"> Email</label>
+                    <input class="hero_input-box" type="text" id="email" name="email" required>
                 </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="message"> Message </label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </div>
+            <a href="/" id="hero_button">
+                Submit
+            </a>
 
-
-
-                        <a href="/" id="hero_button">
-                            Submit
-                        </a>
-
-            </form>
-        </div>
+        </form>
     </div>
 </section>
 
@@ -159,7 +153,7 @@
     <footer>
 
         <div id="footer_container">
-            <img class="logo" src="LOGO%20PNG.png">
+            <img class="logo" src="Logo%20White.svg">
             <div id="footer_text">
                 <div id="footer_states">New Jersey - Pennsylvania - New York</div>
                 <div id="footer_contact">
