@@ -2,43 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
   <title>Gallery</title>
   <link rel="stylesheet" href="style2.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-  <div class="grid" >
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery001.jpg">
 
+
+<nav class="navbar">
+  <div class="navbar_container">
+    <a href="/" id="navbar_logo">
+      <img id="logo" src="Logo.svg">
+    </a>
+
+    <ul class="navbar_menu">
+      <li class="navbar_item">
+        <a href="/" class="navbar_links">
+          Home
+        </a>
+      </li>
+      <li class="navbar_item">
+        <a href="/" class="navbar_links">
+          Services
+        </a>
+      </li>
+      <li class="navbar_item">
+        <a href="/" class="navbar_links">
+          Gallery
+        </a>
+      </li>
+
+    </ul>
+    <div class="navbar_btn">
+      <a href="/" class="button">
+        Contact
+      </a></div>
+    <div class="navbar_toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery002.jpg">
+  </div>
+</nav>
 
-    </div>
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery004.jpg">
-
-    </div>
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery007.jpg">
-
-    </div>
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery017.jpg">
-
-    </div>
-    <div class="grid-item">
-      <img src="Images/Gallery/gallery008.jpg">
-
-    </div>
-
-
-
+<section class="header">
+  <div class="header_container">
+    <h1 class="header_title">Gallery
+    </h1>
   </div>
 
-  <script src="app.js"></script>
+</section>
 
-<script src="masonry-layout/dist/masonry.pkgd.min.js"></script>
+<section class="gallery">
+  <div id="filterButtons"></div>
+  <div id="imageGrid" class="gallery_container">  </div>
+
+
+</section>
+
+
+<script src="app.js"></script>
 </body>
 </html>
