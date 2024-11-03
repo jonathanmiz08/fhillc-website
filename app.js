@@ -14,14 +14,32 @@ function createFilterButtons() {
     const filterButtons = document.getElementById('filterButtons');
     filterButtons.innerHTML = '';
 
-    categories.forEach(category => {
+    // First, create buttons for all categories
+    const uniqueCategories = ['all', ...new Set(imageData.flatMap(img => img.categories))];
+
+    uniqueCategories.forEach(category => {
         const button = document.createElement('button');
-        button.className = 'filter-button' + (category === 'all' ? ' active' : '');
+        button.className = 'filter-button';
+        // Add active class only to 'all' button initially
+        if (category === 'all') {
+            button.classList.add('active');
+        }
         button.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-        button.addEventListener('click', () => filterImages(category));
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Add active class to clicked button
+            button.classList.add('active');
+            // Filter the images
+            filterImages(category);
+        });
         filterButtons.appendChild(button);
     });
 }
+
+
 
 
 function createImageGrid() {
@@ -41,9 +59,15 @@ function createImageGrid() {
         const spinner = document.createElement('div');
         spinner.className = 'loading-spinner';
 
+
+
         const img = document.createElement('img');
-        img.dataset.src = image.src;
+        /*img.dataset.src = image.src;
+
+         */
+        img.src = image.src
         img.alt = image.alt;
+
 
         img.addEventListener('load', () => {
             img.classList.add('loaded');
@@ -57,12 +81,15 @@ function createImageGrid() {
         });
 
         imageItem.appendChild(spinner);
+
+
+
         imageItem.appendChild(img);
         imageGrid.appendChild(imageItem);
     });
 }
 
-
+/*
 function setupLazyLoading() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -87,18 +114,19 @@ function setupLazyLoading() {
 }
 
 
-function filterImages(category) {
-    document.querySelectorAll('.filter-button').forEach(button => {
-        button.classList.toggle('active', button.textContent.toLowerCase() === category);
-    });
+ */
 
+function filterImages(category) {
+    // No need to handle button states here anymore
     document.querySelectorAll('.image-item').forEach(item => {
         const imageCategories = JSON.parse(item.dataset.categories);
         const shouldShow = category === 'all' || imageCategories.includes(category);
         item.classList.toggle('hidden', !shouldShow);
     });
 
-    setupLazyLoading();
+    /*setupLazyLoading();
+
+     */
 }
 
 
@@ -127,10 +155,14 @@ async function loadGallery() {
         createFilterButtons();
 
 
+
+
         createImageGrid();
 
 
-        setupLazyLoading();
+        /*setupLazyLoading();
+
+         */
 
 
 
