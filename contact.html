@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="main.html" id="navbar_logo">
+            <img id="logo" src="Logo.svg">
+        </a>
+
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="main.html" class="navbar_links">
+                    Home
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">
+                    Services
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="gallery.html" class="navbar_links">
+                    Gallery
+                </a>
+            </li>
+
+        </ul>
+        <div class="navbar_btn">
+            <a href="/" class="button">
+                Contact
+            </a></div>
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+<section class="contact">
+    <div class="contact_container">
+        <ul class="contact_options">
+            <li>
+                <h2>Phone / Email</h2>
+                <div>Call: (973) 698-6978</div>
+                <div>Text: (908) 967-2805</div>
+                <div>Email: FHILLC@info.com</div>
+            </li>
+            <li>
+                <h2>Service Area</h2>
+                <div>Serving New Jersey, Pennsylvania, and New York</div>
+            </li>
+            <li>
+                <h2>Hours of Operation</h2>
+                <div>Mon - Sun</div>
+                <div>7am - 10pm EST</div>
+            </li>
+        </ul>
+        <form class="contact_form">
+            <div class="hero_form-row">
+                <div id="contact_form-title">
+                    FREE ESTIMATE
+                </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="first_name">First Name</label>
+                    <input class="hero_input-box" type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="hero_input">
+                    <label class="hero_input-label" for="last_name">Last Name</label>
+                    <input class="hero_input-box" type="text" id="last_name" name="last_name" required>
+                </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="number">Phone Number</label>
+                    <input class="hero_input-box" type="text" id="number" name="number" required>
+                </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="email"> Email</label>
+                    <input class="hero_input-box" type="text" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="hero_form-row">
+                <div class="hero_input">
+                    <label class="hero_input-label" for="contact_message"> Message </label>
+                    <textarea id="contact_message" name="message" required></textarea>
+                </div>
+            </div>
+            <a href="/" id="contact_button">
+                Submit
+            </a>
+
+        </form>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+
+        <div id="footer_container">
+            <img class="logo" src="Logo%20White.svg">
+            <div id="footer_text">
+                <div id="footer_states">New Jersey - Pennsylvania - New York</div>
+                <div id="footer_contact">
+                    <div class="footer_contact-element">Text: (908) 967-2805</div>
+                    <div class="footer_contact-element">Call: (973) 698-6978</div>
+                    <div id="footer_email" class="footer_contact-element">Email: info@FHILLC.com</div>
+                </div>
+                <div id="footer_hours">Mon - Sun 7am - 10pm EST </div>
+            </div>
+        </div>
+        <div id="footer_copyright">&copy; 2024 Family Home Improvement LLC</div>
+
+    </footer>
+</section>
+</body>
+</html>
