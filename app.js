@@ -1,9 +1,19 @@
 const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar_menu')
+const menuLinks = document.querySelector('.nav-menu')
+const options = document.querySelector('#services-menu')
+const service = document.querySelector('#services')
+
 menu.addEventListener('click', function () {
     menu.classList.toggle('is-active')
     menuLinks.classList.toggle('active');
 })
+
+
+service.addEventListener('click', function() {
+    options.classList.toggle('active')
+    service.classList.toggle('active')
+})
+
 
 
 
@@ -11,7 +21,7 @@ menu.addEventListener('click', function () {
 let imageData = [];
 let categories = ['all'];
 function createFilterButtons() {
-    const filterButtons = document.getElementById('filterButtons');
+    const filterButtons = document.getElementById('all-filter-buttons');
     filterButtons.innerHTML = '';
 
     // First, create buttons for all categories
@@ -43,7 +53,7 @@ function createFilterButtons() {
 
 
 function createImageGrid() {
-    const imageGrid = document.getElementById('imageGrid');
+    const imageGrid = document.getElementById('image-grid');
     if (!imageGrid) {
         console.error('Image grid element not found');
         return;
@@ -131,7 +141,7 @@ function filterImages(category) {
 
 
 function showError(message) {
-    const imageGrid = document.getElementById('imageGrid');
+    const imageGrid = document.getElementById('image-grid');
     imageGrid.innerHTML = `
                 <div class="error-message">
                     ${message}

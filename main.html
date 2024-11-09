@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <meta name="description" content="Family Home Improvement - Roofing, Siding & Metal Roofing Services in NJ, PA, NY">
+    <meta name="keywords" content="roofing, metal roofing, siding, gutters, home improvement">
+    <title>Family Home Improvement LLC | Roofing, Siding & Metal Roofing Services</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,163 +15,133 @@
 
 <body>
 
-<nav class="navbar">
-    <div class="navbar_container">
-        <a href="main.html" id="navbar_logo">
-            <img id="logo" src="Logo.svg">
-        </a>
-
-        <ul class="navbar_menu">
-            <li class="navbar_item">
-                <a href="main.html" class="navbar_links">
-                    Home
-                </a>
-            </li>
-            <li class="navbar_item">
-                <a href="/" class="navbar_links">
-                    Services
-                </a>
-            </li>
-            <li class="navbar_item">
-                <a href="gallery.html" class="navbar_links">
-                    Gallery
-                </a>
-            </li>
-
-        </ul>
-        <div class="navbar_btn">
-            <a href="/" class="button">
-                Contact
-            </a></div>
-        <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-</nav>
-
-
-
-<section class="hero">
-    <div class="hero_container">
-        <div class="hero_message">
-            <h1 class="hero_title">
-                Built on Family
-            </h1>
-            <h2 class="hero_subtitle">
-                Proudly improving homes across New York, Pennsylvania, and New Jersey with reliable service for over 20 years!
-            </h2>
-        </div>
-        <form class="hero_form">
-            <div class="hero_form-row">
-                <div id="hero_form-title">
-                    FREE ESTIMATE
-                </div>
-            </div>
-            <div class="hero_form-row">
-                <div class="hero_input">
-                    <label class="hero_input-label" for="first_name">First Name</label>
-                    <input class="hero_input-box" type="text" id="first_name" name="first_name" required>
-                </div>
-                <div class="hero_input">
-                    <label class="hero_input-label" for="last_name">Last Name</label>
-                    <input class="hero_input-box" type="text" id="last_name" name="last_name" required>
-                </div>
-            </div>
-            <div class="hero_form-row">
-                <div class="hero_input">
-                    <label class="hero_input-label" for="number">Phone Number</label>
-                    <input class="hero_input-box" type="text" id="number" name="number" required>
-                </div>
-            </div>
-            <div class="hero_form-row">
-                <div class="hero_input">
-                    <label class="hero_input-label" for="email"> Email</label>
-                    <input class="hero_input-box" type="text" id="email" name="email" required>
-                </div>
-            </div>
-            <div class="hero_form-row">
-                <div class="hero_input">
-                    <label class="hero_input-label" for="message"> Message </label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-            </div>
-            <a href="/" id="hero_button">
-                Submit
+    <nav aria-label="Main navigation">
+        <!-- Navigation Content-->
+        <div class="nav-container">
+            <a href="main.html" id="nav-logo">
+                <img alt="Family Home Improvement company logo" id="logo" src="Logo.svg" loading="eager">
             </a>
-
-        </form>
-    </div>
-</section>
-
-<section class="service">
-    <div class="service_container">
-
-        <div class="service_card">
-            <img class="service_image" src="metal-roof.jpeg">
-            <div class="service_description">
-                <h2 class="service_title">Shingle & Flat Roofing</h2>
-                <h3 class="service_subtitle">Protect your home with our durable and expertly installed roofing solutions. We ensure your home stays safe and dry through every season.</h3>
-
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="main.html" class="nav-links">
+                        Home
+                    </a>
+                </li>
+                <li id="nav-services" class="nav-item">
+                    <a id="services" class="nav-links">
+                        Services
+                    </a>
+                    <div id="services-menu" aria-label="Services submenu" role="menu">
+                        <a href="roofing.html" id="roofing">Roofing</a>
+                        <a href="siding.html">Siding & Gutters</a>
+                        <a href="metal-roofing.html">Metal Roofing</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-links">
+                        Gallery
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-btn">
+                <a href="contact.html" class="button">
+                    Contact
+                </a></div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <a href="/" class="service_button">
-                LEARN MORE
-            </a>
-
         </div>
-        <div class="service_card">
-            <img class="service_image" src="roof-image.jpeg">
-            <div class="service_description">
-                <h2 class="service_title">Siding & Gutters</h2>
-                <h3 class="service_subtitle">Transform the exterior of your home with our high-quality siding services. Our service includes a variety of siding styles and gutter installation. <!--provide a variety of styles and materials to enhance your home's appeal. Keep your home safe from water damage with high-quality gutter services. We offer gutter installation and repair to ensure proper drainage--></h3>
+    </nav>
 
+    <main>
+        <section class="hero">
+            <!-- Hero Content-->
+            <div class="hero-container">
+                <div class="hero-message">
+                    <h1 class="hero-title">
+                        Built on Family
+                    </h1>
+                    <p class="hero-subtitle">
+                        Proudly improving homes across New Jersey, Pennsylvania, and New York with reliable service for over 20 years!
+                    </p>
+                </div>
+                <form class="hero-form" role="form" aria-label="Free Estimate Form">
+                    <div id="hero-form-title">
+                        Free Estimate
+                    </div>
+                    <input class="hero-input-box" type="text" placeholder="Name *" required>
+                    <input class="hero-input-box" type="tel" placeholder="Phone *" required>
+                    <input class="hero-input-box" type="email" placeholder="Email *" required>
+                    <textarea id="message" placeholder="Message *" required></textarea>
+                    <button type="submit"  id="hero-button">
+                        Submit
+                    </button>
+                </form>
             </div>
-            <a href="/"  class="service_button">
-                LEARN MORE
-            </a>
+        </section>
 
+        <section class="service">
+            <!-- Services Content-->
 
-        </div>
-        <div class="service_card">
-            <img class="service_image" src="gutter.jpg">
-            <div class="service_description">
-                <h2 class="service_title">Metal Roofing</h2>
-                <h3 class="service_subtitle">Invest in the strength and longevity of metal roofing. Quality craftsmanship and service is always guaranteed with a variety of solutions.</h3>
+            <div class="service-container">
 
+                <div class="service-card">
+                    <img alt="" class="service-image" src="Images/Gallery/image134.jpg" loading="lazy">
+                    <div class="service-description">
+                        <h2 class="service-title">Shingle & Flat Roofing</h2>
+                        <h3 class="service-subtitle">Protect your home with our durable and expertly installed roofing solutions. We ensure your home stays safe and dry through every season.</h3>
+
+                    </div>
+                    <a href="roofing.html" class="service-button">
+                        LEARN MORE
+                    </a>
+                </div>
+                <div class="service-card">
+                    <img alt="" class="service-image" src="Images/Gallery/image074.jpg" loading="lazy">
+                    <div class="service-description">
+                        <h2 class="service-title">Siding & Gutters</h2>
+                        <h3 class="service-subtitle">Transform the exterior of your home with our high-quality siding services. Our service includes a variety of siding styles and gutter installation. <!--provide a variety of styles and materials to enhance your home's appeal. Keep your home safe from water damage with high-quality gutter services. We offer gutter installation and repair to ensure proper drainage--></h3>
+                    </div>
+                    <a href="siding.html"  class="service-button">
+                        LEARN MORE
+                    </a>
+                </div>
+                <div class="service-card">
+                    <img alt="" class="service-image" src="Images/Gallery/image028.jpg" loading="lazy">
+                    <div class="service-description">
+                        <h2 class="service-title">Metal Roofing</h2>
+                        <h3 class="service-subtitle">Invest in the strength and longevity of metal roofing. Quality craftsmanship and service is always guaranteed with a variety of solutions.</h3>
+                    </div>
+                    <a href="metal-roofing.html"  class="service-button">
+                        LEARN MORE
+                    </a>
+                </div>
             </div>
-            <a href="/"  class="service_button">
-                LEARN MORE
-            </a>
+        </section>
+    </main>
 
-
-
-        </div>
-
-    </div>
-</section>
-
-<section class="footer">
     <footer>
-
-        <div id="footer_container">
-            <img class="logo" src="Logo%20White.svg">
-            <div id="footer_text">
-                <div id="footer_states">New Jersey - Pennsylvania - New York</div>
-                <div id="footer_contact">
-                    <div class="footer_contact-element">Text: (908) 967-2805</div>
-                    <div class="footer_contact-element">Call: (973) 698-6978</div>
-                    <div id="footer_email" class="footer_contact-element">Email: info@FHILLC.com</div>
+        <!-- Footer Content-->
+        <div id="footer-container">
+            <div id="footer-container-text">
+                <img alt="" class="logo" src="Logo%20White.svg">
+                <div id="footer-text">
+                    <div id="footer-states">New Jersey - Pennsylvania - New York</div>
+                    <div id="footer-contact">
+                        <div class="footer-contact-element">Text: (908) 967-2805</div>
+                        <div class="footer-contact-element">Call: (973) 698-6978</div>
+                        <div id="footer-email" class="footer-contact-element">Email: info@FHILLC.com</div>
+                    </div>
+                    <div id="footer-hours">Mon - Sun 7am - 10pm EST </div>
                 </div>
-                <div id="footer_hours">Mon - Sun 7am - 10pm EST </div>
             </div>
+            <small id="footer-copyright">&copy; 2024 Family Home Improvement LLC</small>
         </div>
-        <div id="footer_copyright">&copy; 2024 Family Home Improvement LLC</div>
-
     </footer>
-</section>
 
-<script src = "app.js"></script>
+    <script src = "app.js"></script>
 
 </body>
 </html>
