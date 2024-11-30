@@ -10,11 +10,24 @@ menu.addEventListener('click', function () {
 
 
 service.addEventListener('click', function() {
-    options.classList.toggle('active')
-    service.classList.toggle('active')
+    if (window.innerWidth <= 980) {
+        options.classList.toggle('active')
+        service.classList.toggle('active')
+    }
 })
 
+function resetMobileState() {
+    if (window.innerWidth > 980) {
+        // Remove active classes
+        menu?.classList.remove('is-active');
+        menuLinks?.classList.remove('active');
+        options?.classList.remove('active');
+        service?.classList.remove('active');
+    }
+}
 
+// Add resize event listener
+window.addEventListener('resize', resetMobileState);
 
 
 
@@ -24,7 +37,7 @@ function createFilterButtons() {
     const filterButtons = document.getElementById('all-filter-buttons');
     filterButtons.innerHTML = '';
 
-    // First, create buttons for all categories
+    // Create buttons for all categories
     const uniqueCategories = ['all', ...new Set(imageData.flatMap(img => img.categories))];
 
     uniqueCategories.forEach(category => {
@@ -72,9 +85,7 @@ function createImageGrid() {
 
 
         const img = document.createElement('img');
-        /*img.dataset.src = image.src;
 
-         */
         img.src = image.src
         img.alt = image.alt;
 
@@ -99,32 +110,6 @@ function createImageGrid() {
     });
 }
 
-/*
-function setupLazyLoading() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target.querySelector('img');
-                if (img && img.dataset.src) {
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                    observer.unobserve(entry.target);
-                }
-            }
-        });
-    }, {
-        root: null,
-        rootMargin: '50px',
-        threshold: 0.1
-    });
-
-    document.querySelectorAll('.image-item').forEach(item => {
-        observer.observe(item);
-    });
-}
-
-
- */
 
 function filterImages(category) {
     // No need to handle button states here anymore
@@ -134,9 +119,6 @@ function filterImages(category) {
         item.classList.toggle('hidden', !shouldShow);
     });
 
-    /*setupLazyLoading();
-
-     */
 }
 
 
@@ -164,15 +146,8 @@ async function loadGallery() {
 
         createFilterButtons();
 
-
-
-
         createImageGrid();
 
-
-        /*setupLazyLoading();
-
-         */
 
 
 
