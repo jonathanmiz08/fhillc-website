@@ -32,7 +32,7 @@
                         Services
                     </a>
                     <div id="services-menu" aria-label="Services submenu" role="menu">
-                        <a href="roofing.html" id="roofing">Roofing</a>
+                        <a href="roofing.html">Roofing</a>
                         <a href="siding.html">Siding & Gutters</a>
                         <a href="metal-roofing.html">Metal Roofing</a>
                     </div>
@@ -43,8 +43,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="nav-btn">
-                <a href="contact.html" class="button">
+            <div class="nav-button">
+                <a href="contact.html" id="nav-button-click">
                     Contact
                 </a></div>
             <div class="nav-toggle" id="mobile-menu">
@@ -67,14 +67,19 @@
                         Proudly improving homes across New Jersey, Pennsylvania, and New York with reliable service for over 20 years!
                     </p>
                 </div>
-                <form class="hero-form" role="form" aria-label="Free Estimate Form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="hero-form" role="form" aria-label="Free Estimate Form">
                     <div id="hero-form-title">
                         Free Estimate
                     </div>
-                    <input class="hero-input-box" type="text" placeholder="Name *" required>
-                    <input class="hero-input-box" type="tel" placeholder="Phone *" required>
-                    <input class="hero-input-box" type="email" placeholder="Email *" required>
-                    <textarea id="message" placeholder="Message *" required></textarea>
+                    <input type="hidden" name="access_key" value="80b50d10-99c3-4637-90f8-24b4a170a881">
+                    <input class="hero-input-box" type="text" placeholder="Name *" name="name" required>
+                    <input class="hero-input-box" type="tel" placeholder="Phone *" name="phone" required>
+                    <input class="hero-input-box" type="email" placeholder="Email *" name="email" required>
+                    <textarea id="message" placeholder="Message *" name="message" required></textarea>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <button type="submit"  id="hero-button">
                         Submit
                     </button>

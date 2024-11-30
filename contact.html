@@ -31,7 +31,7 @@
                         Services
                     </a>
                     <div id="services-menu" aria-label="Services submenu" role="menu">
-                        <a href="roofing.html" id="roofing">Roofing</a>
+                        <a href="roofing.html">Roofing</a>
                         <a href="siding.html">Siding & Gutters</a>
                         <a href="metal-roofing.html">Metal Roofing</a>
                     </div>
@@ -42,8 +42,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="nav-btn">
-                <a href="contact.html" class="button">
+            <div class="nav-button">
+                <a href="contact.html" id="nav-button-click">
                     Contact
                 </a></div>
             <div class="nav-toggle" id="mobile-menu">
@@ -68,7 +68,7 @@
                             <h2>Phone / Email</h2>
                             <div>Call: (973) 698-6978</div>
                             <div>Text: (908) 967-2805</div>
-                            <div>Email: FHILLC@info.com</div>
+                            <div id = "contact-email">Email: FHILLC@info.com</div>
                         </div>
 
                     </li>
@@ -96,16 +96,18 @@
 
                     </li>
                 </ul>
-                <form class="contact-form" role="form" aria-label="Contact Form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" role="form" aria-label="Contact Form">
                     <h2 id="contact-form-title">
                         Contact Us
                     </h2>
-                    <input class="contact-input-box" type="text" placeholder="Name *"  required>
-                    <input class="contact-input-box" type="tel" placeholder="Phone *" required>
-                    <input class="contact-input-box" type="email" placeholder="Email *" required>
+                    <input type="hidden" name="access_key" value="80b50d10-99c3-4637-90f8-24b4a170a881">
+                    <input class="contact-input-box" type="text" placeholder="Name *" name="name" required>
+                    <input class="contact-input-box" type="tel" placeholder="Phone *" name="phone" required>
+                    <input class="contact-input-box" type="email" placeholder="Email *" name="email" required>
 
-                    <textarea id="contact-message" placeholder="Message *"required></textarea>
-
+                    <textarea id="contact-message" placeholder="Message *" name="message" required></textarea>
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <button type="submit"  id="contact-button">
                         Submit
                     </button>
